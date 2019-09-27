@@ -1,0 +1,23 @@
+DARIO CONDE OJEDA
+
+INTERFACES WEB - TRABAJO 1
+
+1. INTRODUCCION
+
+2. ANALISIS DEL DISEÑO WEB
+
+  2.1. Introduccion
+    
+    2.1.1. Nombre
+    
+    2.1.2. URL de la pagina
+    
+    2.1.3. Logo principal
+    
+    2.1.4. Tema 
+
+3. BASE DE LA WEB
+
+  3.1.
+
+4. CONCLUSION
