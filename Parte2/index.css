@@ -1,1 +1,17 @@
+#banner{
 
+}
+
+#logo {
+	display: block;
+	margin: 0 auto;
+}
+
+#divider1{
+	border: 0.5px solid black;
+}
+
+#divider1img{
+	display: block;
+	margin: 0 auto;
+}
