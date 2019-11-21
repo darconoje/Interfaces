@@ -83,3 +83,22 @@ nav button:focus{
 	margin: 0 auto;
 	height: 25px;
 }
+
+#contenttop{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+#topright{
+	display:flex;
+	justify-content:flex-end;
+}
+
+#loggedasdiv{
+	display:flex;
+	align-items: center;
+	border: 0.5px solid black;
+	height: 2em;
+	margin-right: 1em;
+}
