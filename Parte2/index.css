@@ -2,20 +2,53 @@ body{
 	margin: 0px;
 }
 
-#header{
+header{
 	grid-area: header;
 }
 
-#content{
-	grid-area: main;
-}
-
-#aside{
+aside{
 	grid-area: aside;
 }
 
-#footer{
+content{
+	grid-area: main;
+}
+
+footer{
 	grid-area: footer;
+}
+
+nav{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #f44336;
+	height: 100px;
+	border-bottom: 0.5px solid black;
+}
+
+nav button{
+	border-radius: 50%;
+	height: 85px;
+	width: 85px;
+	background-color: white;
+	border: 0.5px solid black;
+	margin: 50px;
+	cursor: pointer;	
+}
+
+nav button:hover{
+	background-color: lightgray;
+}
+
+nav button:active{
+  background-color: lightgray;
+  box-shadow: 0 2px #666;
+  transform: translateY(2px);
+}
+
+nav button:focus{
+	outline: 0;
 }
 
 .grid-container{
@@ -29,6 +62,11 @@ body{
 #banner{
 	display: flex;
 	justify-content: center;
+	align-items: flex-end;
+}
+
+#dividioma{
+
 }
 
 #logo {
@@ -44,73 +82,4 @@ body{
 	display: block;
 	margin: 0 auto;
 	height: 25px;
-}
-
-#topmenu{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: #f44336;
-	height: 100px;
-	border-bottom: 0.5px solid black;
-}
-
-#btnprofile{
-	border-radius: 50%;
-	height: 85px;
-	width: 85px;
-	background-color: white;
-	border: 0.5px solid black;
-	margin: 50px;
-	 cursor: pointer;
-}
-
-#btnprofile:hover{
-	background-color: lightgray;
-}
-
-#btnprofile:active {
-  background-color: lightgray;
-  box-shadow: 0 2px #666;
-  transform: translateY(2px);
-}
-
-#btnmedia{
-	border-radius: 50%;
-	height: 85px;
-	width: 85px;
-	background-color: white;
-	border: 0.5px solid black;
-	margin: 50px;
-	cursor: pointer;
-}
-
-#btnmedia:hover{
-	background-color: lightgray;	
-}
-
-#btnmedia:active {
-  background-color: lightgray;
-  box-shadow: 0 2px #666;
-  transform: translateY(2px);
-}
-
-#btnnotifications{
-	border-radius: 50%;
-	height: 85px;
-	width: 85px;
-	background-color: white;
-	border: 0.5px solid black;
-	margin: 50px;
-	cursor: pointer;
-}
-
-#btnnotifications:hover{
-	background-color: lightgray;	
-}
-
-#btnnotifications:active {
-  background-color: lightgray;
-  box-shadow: 0 2px #666;
-  transform: translateY(2px);
 }
