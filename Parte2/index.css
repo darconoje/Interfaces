@@ -177,10 +177,19 @@ div.mediaimg{
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
-	border: 0.5px solid black;
 	height: 70%;
 	width: 70%;
 	margin-right: 1em;
+}
+
+.mediaimg img:first-child{
+	max-height: 85%;
+	max-width: 85%;
+	box-shadow: 5px 5px 2.5px black;
+} 
+
+.mediaimg img:last-child{
+	margin-top: 10px;
 }
 
 div.mediatext{
@@ -190,8 +199,25 @@ div.mediatext{
 	justify-content: flex-start;
 }
 
-.mediatext > p{
-	margin-top: -5px;
+.mediatext p:first-child{
+	margin-top:-10px;
+	font-family: 'Indie Flower';
+	font-size: 16px;
+}
+
+.mediatext p:nth-child(2){
+	margin-top: 0px;
+	font-size: 10px;
+}
+
+.mediatext p:last-child{
+	margin-top: -10px;
+	font-size: 10px;
+	color: gray;
+}
+
+.mediatext p{
+	margin-left: -30px;
 }
 
 /* ELEMENTOS ASIDE */
