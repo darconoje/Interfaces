@@ -312,6 +312,10 @@ div.mediatext{
 	margin-bottom:2em;
 }
 
+#socialmediaicons img{
+	max-height:2em;
+}
+
 /* LINKS */
 
 a:link{
