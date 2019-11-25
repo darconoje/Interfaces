@@ -110,26 +110,7 @@ nav button:focus{
 	align-items: flex-start;
 }
 
-#topright{
-	display:flex;
-	justify-content:flex-end;
-	flex-grow:0;
-}
 
-#loggedasdiv{
-	display:flex;
-	align-items: center;
-	justify-content: center;
-	border: 0.5px solid black;
-	height: 2.75em;
-	margin-right: 1em;
-	width: 16em;
-	border-top: 0px;
-}
-
-#loggedasdiv:first-child{
-	font-size: 0.75em;
-}
 
 #searchbar{
 	border-radius: 1em;
@@ -165,6 +146,11 @@ nav button:focus{
 	width: 25%;
 }
 
+p.contentdivtag{
+	font-family: 'Indie Flower';
+	font-size: 1.25em;
+}
+
 .contentcontainer{
 	display: flex;
 	align-items: center;
@@ -177,7 +163,7 @@ nav button:focus{
 	overflow-x:hidden;
 }
 
-.mediacontent{
+div.mediacontent{
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -186,25 +172,47 @@ nav button:focus{
 	width: 90%;
 }
 
-.mediaimg{
+div.mediaimg{
 	border: 0.5px solid black;
 	height: 60%;
 	width: 60%;
 	margin-right: 1em;
 }
 
-.mediatext{
+div.mediatext{
 	display:flex;
 	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+	align-items: flex-start;
+	justify-content: flex-start;
 }
 
-.mediatext p{
-	margin-top: 0px;
+.mediatext > p{
+	margin-top: -5px;
 }
 
 /* ELEMENTOS ASIDE */
+
+#topright{
+	display:flex;
+	justify-content:flex-end;
+	flex-grow:0;
+}
+
+#loggedasdiv{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	border: 0.5px solid black;
+	height: 2.75em;
+	margin-right: 1em;
+	width: 16em;
+	border-top: 0px;
+}
+
+#loggedasdiv:first-child{
+	font-size: 1em;
+	font-family: 'Indie Flower';
+}
 
 #sidebardiv{
 	background-color: #f44336;
@@ -218,6 +226,10 @@ nav button:focus{
 #sidebartag{
 	display: flex;
 	justify-content: center;
+}
+
+#sidebartag p{
+	font-family: 'Indie Flower';
 }
 
 #sidebar{
