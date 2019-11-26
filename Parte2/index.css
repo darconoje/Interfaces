@@ -325,7 +325,6 @@ div.mediatext{
 
 #footerdiv{
 	display:flex;
-	justify-content:center;
 	border-top: 0.5px solid black;
 	border-bottom: 0.5px solid black;
 	background-color: #f44336;
@@ -341,13 +340,13 @@ div.mediatext{
 #socialmediaicons{
 	display:flex;
 	flex-direction:row;
-	align-items: center;
 }
 
 #socialmediaicons img{
+	margin-top: 5px;
+	margin-bottom: 5px;
 	object-fit:contain;
-	width:65%;
-	height:65%;
+	width: 30%;
 }
 
 /* LINKS */
