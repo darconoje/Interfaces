@@ -85,7 +85,7 @@ nav button:focus{
 }
 
 #logo {
-
+	object-fit: contain;
 }
 
 #divider1{
@@ -95,6 +95,7 @@ nav button:focus{
 
 #divider1img{
 	display: block;
+	object-fit:contain;
 	margin: 0 auto;
 	height: 25px;
 }
@@ -189,6 +190,7 @@ div.mediaimg{
 	background: black;
   	border-radius: 5px;
   	padding: 2.5px;
+  	object-fit: contain;
 } 
 
 .mediaimg video:first-child{
@@ -312,8 +314,16 @@ div.mediatext{
 	margin-bottom:2em;
 }
 
+#socialmediaicons{
+	display:flex;
+	flex-direction:row;
+	align-items: center;
+}
+
 #socialmediaicons img{
-	max-height:2em;
+	object-fit:contain;
+	width:75%;
+	height:75%;
 }
 
 /* LINKS */
