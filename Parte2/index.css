@@ -210,7 +210,8 @@ div.mediaimg{
 	border: 3px solid black;
 	background: black;
   	border-radius: 5px;
-  	padding: 2.5px;	
+  	padding: 2.5px;
+  	object-fit:contain;
 }
 
 .mediaimg img:last-child{
@@ -256,9 +257,7 @@ div.mediatext{
 }
 
 #topright img{
-	height: 17%;
-	width: 17%;
-	object-fit: contain;
+	object-fit: scale-down;
 	margin-right: 10px;
 }
 
@@ -340,13 +339,14 @@ div.mediatext{
 #socialmediaicons{
 	display:flex;
 	flex-direction:row;
+	width:400px;
 }
 
 #socialmediaicons img{
-	margin-top: 5px;
-	margin-bottom: 5px;
+	margin-top: 7px;
+	margin-bottom: 7px;
 	object-fit:contain;
-	width: 30%;
+	width:10%;
 }
 
 /* LINKS */
