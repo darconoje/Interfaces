@@ -104,13 +104,14 @@ p{
 	margin-left: auto;
 	margin-right: auto;
 	object-fit: contain;
+	height:175px;
 }
 
 #divider1{
 	height: 25px;
 	border: 0.5px solid black;
-	border-left: 0px;
 	border-right: 0px;
+	border-left: 0px;
 }
 
 #divider1img{
@@ -163,22 +164,23 @@ p{
 }
 
 #formulariodiv{
-	display: flex;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	justify-content: center;
-	align-items: center;
-	border-top: 1px solid black;	
-}
-
-#formulario{
 	display:flex;
 	display: flex;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: -webkit-flex;
+	justify-content: center;
+	align-items: center;	
+	border-top: 1px solid black;
+}
+
+#formulario{
+	display: flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	flex-direction: column;	
+	max-width: 175px;
 }
 
 label{
@@ -199,12 +201,8 @@ label{
   }
 }
 
-#sexodiv label{
-	font-size:14px;
-}
-
 #submit {
-	margin-top: 25px;
+	margin-top: 10px;
 	box-shadow: 3px 4px 0px 0px #899599;
 	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
 	background-color:#ededed;
@@ -219,6 +217,7 @@ label{
 	text-decoration:none;
 	text-shadow:0px 1px 0px #e1e2ed;
 }
+
 
 /* ELEMENTOS FOOTER */
 
@@ -268,6 +267,7 @@ label{
 	-webkit-transform: rotate(360deg);
 	-ms-transform: rotate(360deg);
 }
+
 
 /* LINKS */
 

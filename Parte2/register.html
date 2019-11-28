@@ -33,7 +33,7 @@
 
 			          <div id="navbuttons">
 			            <button id="btnprofile">Profile</button>
-			            <button id="btnupload">Upload</button>
+			            <button id="btnupload" onclick="location.href='upload.html'">Upload</button>
 			            <button id="btnnotifications">Notifications</button>
 			          </div>				
 
@@ -50,8 +50,23 @@
 						</div>	
 
 						<div id="formulariodiv">
-							<form id="formulario">
-								
+							<form id="formulario" action="index.html">
+								<label for="nombreusuario" class="tag">Nombre de usuario:</label>
+								<input id="nombreusuario" type="text" autocomplete="off" autofocus>
+								<label for="contrasenausuario" class="tag">Contraseña usuario:</label>
+								<input id="contrasenausuario" type="password">
+								<label for="fechanacimiento" class="tag">Fecha de nacimiento:</label>
+								<input id="fechanacimiento" type="date">
+								<label for="email" class="tag">Correo electrónico:</label>
+								<input id="email" type="email">
+								<label>Sexo:</label>
+								<div id="sexodiv">
+									<label for="varon" class="etiqueta">Varon</label>									
+									<input name="sexo" type="radio" id="varon" value="Varon">
+									<label for="largoplazo" class="etiqueta">Mujer</label>									
+									<input name="sexo" type="radio" id="mujer" value="Mujer">	
+								</div>	
+								<input type="submit" id="submit">				
 							</form>
 						</div>	
 

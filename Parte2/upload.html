@@ -13,6 +13,91 @@
 
 	<body>
 
+		<div class="grid-container">
+
+			<header>
+
+				<div id="banner">
+
+					<img src="img/logo.png" alt="logo" id="logo">
+
+				</div>	
+
+			    <div id="divider1">
+
+			    	<img src="img/divider1.png" alt="divider1img" id="divider1img">
+
+			    </div>
+
+				<nav>
+
+			          <div id="navbuttons">
+			            <button id="btnprofile">Profile</button>
+			            <button id="btnupload" onclick="location.href='upload.html'">Upload</button>
+			            <button id="btnnotifications">Notifications</button>
+			          </div>				
+
+				</nav>
+
+			</header>
+
+			<content>
+
+					<div id="contenido">
+
+						<div id="contenidotop">
+							<p>UPLOAD</p>
+						</div>	
+
+						<div id="formulariodiv">
+							<form id="formulario" action="index.html">
+								<label for="nombremedia" class="tag">Nombre de archivo:</label>
+								<input id="nombremedia" type="text" autocomplete="off" autofocus>
+								<label for="categoriamedia" class="tag">Categoría:</label>
+								<select id="categoriamedia">
+									<option>Política</option> 
+									<option>Deportes</option>
+									<option>Social</option>
+									<option>Música</option>
+									<option>Memes</option>
+								</select>	
+								<label for="file" class="tag">Archivo:</label>
+								<input id="file" type="file">
+								<label for="source" class="tag">Fuente:</label>
+								<input type="url" id="source">
+								<label for="description" class="tag">Descripción:</label>
+								<textarea name="description" id="description">Escribe la descripción...</textarea>
+								<div id="confirmar">
+								<label for="validar" class="tag">Confirmar:</label>
+								<input type="checkbox" id="validar">	
+								</div>
+								<input type="submit" id="submit">	
+
+							</form>
+						</div>	
+
+					</div>
+
+			</content>
+
+			<footer>
+
+			      <div id="footerdiv">
+
+			          <div id="socialmediaicons">
+			            <img src="img/iconreddit.png" alt="redditicon">
+			            <img src="img/iconfacebook.png" alt="facebookicon">
+			            <img src="img/icontwitter.png" alt="twittericon">
+			            <img src="img/iconwhatsapp.png" alt="whatsappicon">                                    
+			          </div>
+
+			          <p> <a href="">Términos de Uso</a> |  <a href="">Ayuda</a>  |  <a href="">Privacidad</a>  |  <a href="">Contacto</a> </p>
+			        </div>
+
+			</footer>	
+
+		</div>
+
 	</body>
 
 </html>
