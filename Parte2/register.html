@@ -21,6 +21,13 @@
 					<a href="index.html" id="bannerlink">
 						<img src="img/logo.png" alt="logo" id="logo">
 					</a>
+					<div id="dividioma">
+	            		<label for="idioma">Idioma: </label>
+	            		<select id="idioma">
+	              			<option>Español</option>
+	            			<option>English</option>
+	          			</select>
+         			 </div>
 				</div>	
 
 			    <div id="divider1">
@@ -31,11 +38,16 @@
 
 				<nav>
 
-			          <div id="navbuttons">
-			            <button id="btnprofile">Profile</button>
-			            <button id="btnupload" onclick="location.href='upload.html'">Upload</button>
-			            <button id="btnnotifications">Notifications</button>
-			          </div>				
+			        <div id="navbuttons">
+			        	<button id="btnprofile"><img src="img/buttonprofile.png" alt="profilebutton" id="profilebutton"></button>
+			        	<button id="btnupload" onclick="location.href='upload.html'"><img src="img/buttonupload.png" alt="uploadbutton" id="uploadbutton"></button>
+			        	<button id="btnnotifications"><img src="img/buttonnotifications.png" alt="notificationsbutton" id="notificationsbutton"></button>
+			        </div>				
+
+			          <div id="logreg">
+			            <button id="log">Login</button>
+			            <button id="reg" onclick="location.href='register.html'">Registrarse</button>
+			          </div>
 
 				</nav>
 
@@ -52,6 +64,10 @@
 						<div id="formulariodiv">
 							<form id="formulario" action="index.html">
 								<label for="nombreusuario" class="tag">Nombre de usuario:</label>
+								<!-- 
+								He usado la propiedad autofocus en este input porque es el primer campo que hay que rellenar del formulario
+								He usado la propiedad autocomplete con valor off porque en teoría no puede haber dos usuarios con el mismo nombre y así evitar este problema en el futuro
+								-->								
 								<input id="nombreusuario" type="text" autocomplete="off" autofocus>
 								<label for="contrasenausuario" class="tag">Contraseña usuario:</label>
 								<input id="contrasenausuario" type="password">
@@ -79,10 +95,10 @@
 			      <div id="footerdiv">
 
 			          <div id="socialmediaicons">
-			            <img src="img/iconreddit.png" alt="redditicon">
-			            <img src="img/iconfacebook.png" alt="facebookicon">
-			            <img src="img/icontwitter.png" alt="twittericon">
-			            <img src="img/iconwhatsapp.png" alt="whatsappicon">                                    
+			            <img src="img/iconreddit.png" alt="redditicon" onclick="location.href='https://www.reddit.com/'">
+			            <img src="img/iconfacebook.png" alt="facebookicon" onclick="location.href='https://www.facebook.com/'">
+			            <img src="img/icontwitter.png" alt="twittericon" onclick="location.href='https://www.twitter.com/'">
+			            <img src="img/iconwhatsapp.png" alt="whatsappicon" onclick="location.href='https://www.whatsapp.com/'">                                 
 			          </div>
 
 			          <p> <a href="">Términos de Uso</a> |  <a href="">Ayuda</a>  |  <a href="">Privacidad</a>  |  <a href="">Contacto</a> </p>

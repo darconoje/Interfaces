@@ -2,7 +2,6 @@
 
 body{
 	margin: 0px;
-	overflow-x: hidden;
 }
 
 /* ETIQUETAS SEMANTICAS */
@@ -47,6 +46,7 @@ p{
 /* BOTONES DEL MENU DE NAVEGACION */
 
 #navbuttons{
+	margin-left: 22%;
 	flex-direction:row;
 }
 
@@ -58,6 +58,19 @@ p{
 	border: 0.5px solid black;
 	margin: 50px;
 	cursor: pointer;	
+}
+
+button > img{
+	display: flex;
+	display: flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	justify-content:center;
+	align-items:center;	
+	object-fit:scale-down;
+	height:100%;
+	width:100%;
 }
 
 #navbuttons button:hover{
@@ -72,6 +85,29 @@ p{
 
 #navbuttons button:focus{
 	outline: 0;
+}
+
+#logreg {
+	display: flex;
+	display: flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;	
+	margin-top: 0.5em;
+	align-self: flex-start;
+	padding-left: 10%;
+}
+
+#logreg button{
+	width: 8em;
+	background-color: white;
+	border: 0.5px solid black;
+	height: 1.75em;
+	cursor: pointer;	
+}
+
+#reg{
+	margin-left: 1em;
 }
 
 /* GRID CONTAINER */
@@ -89,12 +125,30 @@ p{
 
 #banner{
 	display: flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;	
+	justify-content: space-between;
+	align-items: center;
+}
+
+#bannerlink{
 	display: flex;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: -webkit-flex;	
-	justify-content: center;
-	align-items: center;
+	flex: 1;	
+	display: block;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+#dividioma{
+	margin-left:20%;
+	flex:1;
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	align-self: flex-end;
 }
 
 #logo {
@@ -102,17 +156,15 @@ p{
 	-webkit-flex: 1;
 	-ms-flex: 1;	
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
 	object-fit: contain;
-	height: 158px;
+	margin-left: 35%;
+	width:230%;
 }
 
 #divider1{
 	height: 25px;
-	border: 0.5px solid black;
-	border-left: 0px;
-	border-right: 0px;
+	border-top: 0.5px solid black;
+	border-bottom: 0.5px solid black;
 }
 
 #divider1img{
@@ -247,7 +299,7 @@ label{
 	-webkit-flex: 1;
 	-ms-flex: 1;	
 	font-size: 15px;
-	margin-left:-20%;
+	margin-left:-16.5%;
 }
 
 #socialmediaicons{
@@ -267,6 +319,7 @@ label{
 	-o-object-fit: contain;
 	width:7%;
   	transition: transform .2s;	
+  	cursor:pointer;
 }
 
 #socialmediaicons img:hover{
@@ -295,4 +348,18 @@ a:hover{
 a:active{
 	text-decoration: none;
 	color: black;
+}
+
+/* MEDIA QUERIES */
+
+/* portatil */
+
+@media only screen and (max-width: 800px) and (min-width: 601px){
+
+}
+
+/* movil */
+
+@media only screen and (max-width: 600px){
+
 }
