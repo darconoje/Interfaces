@@ -46,17 +46,17 @@ p{
 /* BOTONES DEL MENU DE NAVEGACION */
 
 #navbuttons{
-	margin-left: 22%;
+	margin-left: 10%;
 	flex-direction:row;
 }
 
 #navbuttons button{
 	border-radius: 50%;
-	height: 85px;
-	width: 85px;
+	height: 80px;
+	width: 80px;
 	background-color: white;
 	border: 0.5px solid black;
-	margin: 50px;
+	margin: 35px;
 	cursor: pointer;	
 }
 
@@ -88,6 +88,7 @@ button > img{
 }
 
 #logreg {
+	margin-right: -10%;
 	display: flex;
 	display: flex;
 	display: -webkit-box;
@@ -99,7 +100,7 @@ button > img{
 }
 
 #logreg button{
-	width: 8em;
+	width: 6.5em;
 	background-color: white;
 	border: 0.5px solid black;
 	height: 1.75em;
@@ -175,6 +176,7 @@ button > img{
 	-o-object-fit: contain;	
 	height: 100%;
 }
+
 /* ELEMENTOS CONTENT */
 
 #contenido{
@@ -187,10 +189,10 @@ button > img{
 	display:block;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top:10%;
+	margin-top:8%;
 	margin-bottom:auto;	
-	height: 400px;
-	width: 800px;	
+	height: 425px;
+	width: 50vw;	
 	border: 0.5px solid black;	
 	background: white;
 }
@@ -352,12 +354,137 @@ a:active{
 
 /* portatil */
 
-@media only screen and (max-width: 800px) and (min-width: 601px){
+@media only screen and (max-width: 1000px) and (min-width: 601px){
+
+	/* BARRA NAVEGACION */
+
+	nav{
+		height: 65px;
+	}
+
+	#navbuttons{
+		margin-left: 10%;
+		flex-direction:row;
+	}
+
+	#navbuttons button{
+		height: 55px;
+		width: 55px;
+		margin: 25px;	
+	}	
+
+	#logreg{
+		flex-direction: column;
+	}
+
+	#logreg button{
+		width: 6em;	
+		height: 1.5em;	
+		font-size: 10px;		
+	}
+
+	#reg{
+		margin-left: 0px;
+		margin-top: 10px;
+	}
+
+	/* CONTENT */
+
+	#contenido{
+		margin-top: 20%;
+	}
+
+	@keyframes ticker {
+	  0% {
+	    -webkit-transform: translate3d(37%, 0, 0);
+	    transform: translate3d(37%, 0, 0);
+	    visibility: visible;
+	  }
+
+	  100% {
+	    -webkit-transform: translate3d(-37%, 0, 0);
+	    transform: translate3d(-37%, 0, 0);
+	  }
+
+	}
+
+	/* FOOTER */
+
+	#footerdiv{
+		height: 2.5em;
+	}
+
+	#footerdiv p{
+		font-size: 12.5px;		
+	}
 
 }
 
 /* movil */
 
 @media only screen and (max-width: 600px){
+
+	/* BARRA NAVEGACION */
+
+	nav{
+		height: 65px;
+	}
+
+	#navbuttons{
+		margin-left: 18%;
+		flex-direction:column;
+	}
+
+	#navbuttons button{
+		height: 50px;
+		width: 50px;
+		margin: 15px;	
+	}	
+
+	#logreg{
+		flex-direction: column;
+		margin-right: 5px;
+	}
+
+	#logreg button{
+		width: 6em;
+		height: 1.5em;	
+		font-size: 10px;
+	}
+
+	#reg{
+		margin-left: 0px;
+		margin-top: 10px;
+	}
+
+	/* CONTENT */
+
+	#contenido{
+		margin-top: 25%;
+	}
+
+	@keyframes ticker {
+	  0% {
+	    -webkit-transform: translate3d(33%, 0, 0);
+	    transform: translate3d(33%, 0, 0);
+	    visibility: visible;
+	  }
+
+	  100% {
+	    -webkit-transform: translate3d(-33%, 0, 0);
+	    transform: translate3d(-33%, 0, 0);
+	  }
+
+	}  
+
+	/* FOOTER */
+
+	#footerdiv{
+		height: 2em;
+	}
+
+	#footerdiv p{
+		font-size: 10px;
+	}
 
 }
