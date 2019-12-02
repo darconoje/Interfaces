@@ -60,17 +60,17 @@ label{
 /* BOTONES DEL MENU DE NAVEGACION */
 
 #navbuttons{
-	margin-left: 22%;
+	margin-left: 10%;
 	flex-direction:row;
 }
 
 #navbuttons button{
 	border-radius: 50%;
-	height: 85px;
-	width: 85px;
+	height: 80px;
+	width: 80px;
 	background-color: white;
 	border: 0.5px solid black;
-	margin: 50px;
+	margin: 35px;
 	cursor: pointer;	
 }
 
@@ -102,6 +102,7 @@ button > img{
 }
 
 #logreg {
+	margin-right: -10%;
 	display: flex;
 	display: flex;
 	display: -webkit-box;
@@ -113,7 +114,7 @@ button > img{
 }
 
 #logreg button{
-	width: 8em;
+	width: 6.5em;
 	background-color: white;
 	border: 0.5px solid black;
 	height: 1.75em;
@@ -464,6 +465,10 @@ div.mediatext{
 	background-color: lightgray;	
 }
 
+#settingsicon{
+	cursor:pointer;
+}
+
 /* ELEMENTOS FOOTER */
 
 .textoanimacion{
@@ -611,12 +616,167 @@ a:active{
 
 /* portatil */
 
-@media only screen and (max-width: 800px) and (min-width: 601px){
+@media only screen and (max-width: 1000px) and (min-width: 601px){
+
+	/* BARRA NAVEGACION */
+
+	nav{
+		height: 65px;
+	}
+
+	#navbuttons{
+		margin-left: 10%;
+		flex-direction:row;
+	}
+
+	#navbuttons button{
+		height: 55px;
+		width: 55px;
+		margin: 25px;	
+	}	
+
+	#logreg{
+		flex-direction: column;
+	}
+
+	#logreg button{
+		width: 6em;	
+		height: 1.5em;	
+		font-size: 10px;		
+	}
+
+	#reg{
+		margin-left: 0px;
+		margin-top: 10px;
+	}
+
+	/* CONTENT */
+
+	content{
+		height: 3250px;
+	}
+
+	#loggedasdiv{
+		display: none;
+	}
+
+	#mainsection{
+		flex-direction:column;
+		justify-content:flex-start;
+		margin-left:10%;
+	}
+
+	.contentcontainer{
+		width: 100%;
+	}
+
+	/* ASIDE */
+
+	aside{
+		justify-content: flex-start;
+	}
+
+	.ad{
+		width: 150px;
+		height: 1000px;
+		align-self: flex-end;
+		margin-top: 300px;		
+	}
+
+	/* FOOTER */
+
+	#footerdiv{
+		height: 2.5em;
+	}
+
+	#footerdiv p{
+		font-size: 12.5px;		
+	}
 
 }
 
 /* movil */
 
 @media only screen and (max-width: 600px){
+
+	/* BARRA NAVEGACION */
+
+	nav{
+		height: 50px;
+	}
+
+	#navbuttons{
+		margin-left: 20%;
+		flex-direction:column;
+	}
+
+	#navbuttons button{
+		height: 40px;
+		width: 40px;
+		margin: 12px;	
+	}		
+
+	#logreg{
+		flex-direction: column;
+		margin-right: 5px;
+	}
+
+	#logreg button{
+		width: 6em;
+		height: 1.5em;	
+		font-size: 10px;
+	}
+
+	#reg{
+		margin-left: 0px;
+		margin-top: 6px;
+	}
+
+	/* CONTENT */
+
+	content{
+		height: 2400px;
+	}
+
+	#loggedasdiv{
+		display: none;
+	}
+
+	#mainsection{
+		flex-direction:column;
+		justify-content: flex-start;
+		margin-left:-5%;
+	}
+
+	.contentcontainer{
+		width: 65%;
+	}	
+
+	/* ASIDE */
+
+	aside{
+		justify-content: flex-start;
+	}
+
+	#sidebardiv{
+		width: 6.5em;
+	}	
+
+	.ad{
+		width: 100px;
+		height: 850px;
+		align-self: flex-end;
+		margin-top: 100px;		
+	}
+
+	/* FOOTER */
+
+	#footerdiv{
+		height: 2em;
+	}
+
+	#footerdiv p{
+		font-size: 10px;
+	}
 
 }
