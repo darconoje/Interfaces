@@ -10,7 +10,7 @@ header{
 	grid-area: header;
 }
 
-content{
+section{
 	background: rgb(255,255,255);
 	background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(244,67,54,1) 100%);
 	grid-area: main;
@@ -177,7 +177,7 @@ button > img{
 	height: 100%;
 }
 
-/* ELEMENTOS CONTENT */
+/* ELEMENTOS SECTION */
 
 #contenido{
 	display:flex;
@@ -227,13 +227,14 @@ button > img{
 	border-top: 1px solid black;	
 }
 
-#formulario{
+fieldset{
 	display:flex;
 	display: flex;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	flex-direction: column;	
+	border: 0px;
 }
 
 label{
@@ -273,6 +274,7 @@ label{
 	padding:7px 25px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #e1e2ed;
+	width:100%;
 }
 
 #submit:hover{
@@ -389,7 +391,7 @@ a:active{
 		margin-top: 10px;
 	}
 
-	/* CONTENT */
+	/* SECTION */
 
 	#contenido{
 		margin-top: 20%;
@@ -458,7 +460,7 @@ a:active{
 		margin-top: 6px;
 	}
 
-	/* CONTENT */
+	/* SECTION */
 
 	#contenido{
 		margin-top: 25%;

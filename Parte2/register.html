@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 	<head>
 
@@ -24,8 +24,12 @@
 					<div id="dividioma">
 	            		<label for="idioma">Idioma: </label>
 	            		<select id="idioma">
-	              			<option>Español</option>
-	            			<option>English</option>
+	              			<option translate="no">Español</option>
+	            			<option translate="no">English</option>
+
+				            <!-- En el select de los idiomas he usado el atributo translate con el valor 'no' porque 
+				            en este caso los nombres de los idiomas no deberían ser traducidos -->
+
 	          			</select>
          			 </div>
 				</div>	
@@ -53,7 +57,7 @@
 
 			</header>
 
-			<content>
+			<section>
 
 					<div id="contenido">
 
@@ -63,32 +67,35 @@
 
 						<div id="formulariodiv">
 							<form id="formulario" action="index.html">
-								<label for="nombreusuario" class="tag">Nombre de usuario:</label>
-								<!-- 
-								He usado la propiedad autofocus en este input porque es el primer campo que hay que rellenar del formulario
-								He usado la propiedad autocomplete con valor off porque en teoría no puede haber dos usuarios con el mismo nombre y así evitar este problema en el futuro
-								-->								
-								<input id="nombreusuario" type="text" autocomplete="off" autofocus>
-								<label for="contrasenausuario" class="tag">Contraseña usuario:</label>
-								<input id="contrasenausuario" type="password">
-								<label for="fechanacimiento" class="tag">Fecha de nacimiento:</label>
-								<input id="fechanacimiento" type="date">
-								<label for="email" class="tag">Correo electrónico:</label>
-								<input id="email" type="email">
-								<label>Sexo:</label>
-								<div id="sexodiv">
-									<label for="varon" class="etiqueta">Varon</label>									
-									<input name="sexo" type="radio" id="varon" value="Varon">
-									<label for="largoplazo" class="etiqueta">Mujer</label>									
-									<input name="sexo" type="radio" id="mujer" value="Mujer">	
-								</div>	
-								<input type="submit" id="submit">				
+								<fieldset>
+									<label for="nombreusuario" class="tag">Nombre de usuario:</label>
+									<!-- 
+										He usado la propiedad autofocus en este input porque es el primer campo que hay que rellenar del formulario
+										
+										He usado la propiedad autocomplete con valor off porque en teoría no puede haber dos usuarios con el mismo nombre y así evitar este problema en el futuro
+									-->								
+									<input id="nombreusuario" type="text" autocomplete="off" autofocus>
+									<label for="contrasenausuario" class="tag">Contraseña usuario:</label>
+									<input id="contrasenausuario" type="password">
+									<label for="fechanacimiento" class="tag">Fecha de nacimiento:</label>
+									<input id="fechanacimiento" type="date">
+									<label for="email" class="tag">Correo electrónico:</label>
+									<input id="email" type="email">
+									<label>Sexo:</label>
+									<div id="sexodiv">
+										<label for="varon" class="etiqueta">Varon</label>									
+										<input name="sexo" type="radio" id="varon" value="Varon">
+										<label for="mujer" class="etiqueta">Mujer</label>									
+										<input name="sexo" type="radio" id="mujer" value="Mujer">	
+									</div>
+									<input type="submit" id="submit">		
+								</fieldset>			
 							</form>
 						</div>	
 
 					</div>
 
-			</content>
+			</section>
 
 			<footer>
 
@@ -111,3 +118,21 @@
 	</body>
 
 </html>
+
+<!-- 
+
+	A LA HORA DE VALIDAR EL ARCHIVO HTML:
+
+	Warning: Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections.
+
+	From line 60, column 4; to line 60, column 12
+
+	Esta es una advertencia cuando dentro del apartado section no aparece ningún elemento heading (h1,h2,h3...). Se podría solucionar añadiendo uno pero en este caso no es necesario
+
+	Warning: The date input type is not supported in all browsers. Please be sure to test, and consider using a polyfill.
+
+	From line 79, column 9; to line 79, column 48
+
+	Esta es una advertencia cuando se usa el input de tipo date que no es compatible con algunos buscadores, para arreglarlo sería necesario usar un polyfill, pero en este caso no he creido necesario usarlo
+
+ -->

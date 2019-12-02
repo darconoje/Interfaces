@@ -21,7 +21,7 @@ aside{
 	justify-content:flex-end;
 }
 
-content{
+section{
 	grid-area: main;
 	height: 750px;
 }
@@ -192,7 +192,7 @@ button > img{
 	height: 100%;
 }
 
-/* ELEMENTOS CONTENT */
+/* ELEMENTOS SECTION */
 
 
 /* parte superior */
@@ -650,9 +650,9 @@ a:active{
 		margin-top: 10px;
 	}
 
-	/* CONTENT */
+	/* SECTION */
 
-	content{
+	section{
 		height: 3250px;
 	}
 
@@ -732,9 +732,9 @@ a:active{
 		margin-top: 6px;
 	}
 
-	/* CONTENT */
+	/* SECTION */
 
-	content{
+	section{
 		height: 2400px;
 	}
 
