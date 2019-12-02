@@ -466,14 +466,14 @@ a:active{
 
 	@keyframes ticker {
 	  0% {
-	    -webkit-transform: translate3d(33%, 0, 0);
-	    transform: translate3d(33%, 0, 0);
+	    -webkit-transform: translate3d(28.5%, 0, 0);
+	    transform: translate3d(28.5%, 0, 0);
 	    visibility: visible;
 	  }
 
 	  100% {
-	    -webkit-transform: translate3d(-33%, 0, 0);
-	    transform: translate3d(-33%, 0, 0);
+	    -webkit-transform: translate3d(-28.5%, 0, 0);
+	    transform: translate3d(-28.5%, 0, 0);
 	  }
 
 	}  
