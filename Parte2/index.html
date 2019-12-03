@@ -54,6 +54,7 @@
       <section>
         <div id="contenttop">
           <div id="busquedatop">
+            <label for="searchbar">Buscar:</label>
             <input id="searchbar" type="text" placeholder="Buscar...">
             <button id="advsearch">Búsqueda Avanzada</button>
           </div>
@@ -413,7 +414,7 @@
 
           <div id="sidebartag">
 
-            <p><strong>Categorías</strong></p>
+            <label for="categorias"><strong>Categorías</strong></label>
 
           </div>
 
@@ -479,40 +480,5 @@
   From line 54, column 7; to line 54, column 15
 
   -> Esta es una advertencia cuando dentro del apartado section no aparece ningún elemento heading (h1,h2,h3...). Se podría solucionar añadiendo uno pero en este caso no es necesario
-
-
-  A LA HORA DE VALIDAR EL WAI:
-
-  Check 57: input element, type of "text", missing an associated label.
-
-  Repair: Add a label element that surrounds the control's label. Set the for attribute on the label element to the same value as the id attribute of the control. And/or add a title attribute to the input element. And/or create a label element that contains the input element.
-
-  Line 57, Column 13:
-
-  -> Ocurre cuando un input tiene un label sin texto. Como este input NO está dentro de un formulario, no he visto necesario añadirlo
-
-  Check 213: input element, type of "text", has no text in label.
-
-  Repair: Add text to the input element's associated label that describes the purpose or function of the control.
-
-  Line 57, Column 13:
-
-  -> Ocurre cuando un input tiene un label sin texto. Como este input NO está dentro de un formulario, no he visto necesario añadirlo
-
-  Check 91: select element missing an associated label.
-
-  Repair: Add a label element that surrounds the control's label. Set the for attribute on the label element to the same value as the id attribute of the control. And/or add a title attribute to the input element. And/or create a label element that contains the input element.
-
-  Line 421, Column 13:
-
-  -> Ocurre cuando un input tiene un label sin texto. Como este input NO está dentro de un formulario, no he visto necesario añadirlo
-
-  Check 188: Label text is empty.
-
-  Repair: Add text to the label element.
-
-  Line 57, Column 13:
-
-  -> Ocurre cuando un input tiene un label sin texto. Como este input NO está dentro de un formulario, no he visto necesario añadirlo
 
  -->
