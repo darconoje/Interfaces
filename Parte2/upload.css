@@ -56,6 +56,8 @@ p{
 
 /* BOTONES DEL MENU DE NAVEGACION */
 
+/* el div que contiene los botones de la barra de navegación */
+
 #navbuttons{
 	margin-left: 10%;
 	-webkit-box-orient:horizontal;
@@ -63,6 +65,8 @@ p{
 	    -ms-flex-direction:row;
 	        flex-direction:row;
 }
+
+/* cada uno de los botones que están dentro de la barra de navegación */
 
 #navbuttons button{
 	border-radius: 50%;
@@ -73,6 +77,8 @@ p{
 	margin: 35px;
 	cursor: pointer;	
 }
+
+/* las imágenes que están dentro de los botones (de la barra de navegación) */
 
 button > img{
 	display: flex;
@@ -92,9 +98,13 @@ button > img{
 	width:100%;
 }
 
+/* cuando se pasa el cursor por encima de los botones de la barra de navegación */
+
 #navbuttons button:hover{
 	background-color: lightgray;
 }
+
+/* cuando se pulsa los botones de la barra de navegación */
 
 #navbuttons button:active{
   background-color: lightgray;
@@ -105,9 +115,13 @@ button > img{
           transform: translateY(2px);
 }
 
+/* cuando los botones de la barra de navegación están activos */
+
 #navbuttons button:focus{
 	outline: 0;
 }
+
+/* el div que contiene los botones de login y registro dentro de la barra de navegación */
 
 #logreg {
 	margin-right: -10%;
@@ -122,6 +136,8 @@ button > img{
 	padding-left: 10%;
 }
 
+/* los botoes de login y registro */
+
 #logreg button{
 	width: 6.5em;
 	background-color: white;
@@ -129,6 +145,8 @@ button > img{
 	height: 1.75em;
 	cursor: pointer;	
 }
+
+/* el botón de registro */
 
 #reg{
 	margin-left: 1em;
@@ -147,6 +165,8 @@ button > img{
 
 /* ELEMENTOS HEADER */
 
+/* el div que contiene el banner de la página y el select de los idiomas */
+
 #banner{
 	display: flex;
 	display: -webkit-box;
@@ -159,6 +179,8 @@ button > img{
 	    -ms-flex-align: center;
 	        align-items: center;
 }
+
+/* el link del banner */
 
 #bannerlink{
 	display: flex;
@@ -173,6 +195,8 @@ button > img{
 	margin-right: 20%;
 }
 
+/* el div que contiene el selec de los idiomas */
+
 #dividioma{
 	margin-left:20%;
 	-webkit-box-flex:1;
@@ -182,6 +206,8 @@ button > img{
 	-ms-flex-item-align: end;
 	    align-self: flex-end;
 }
+
+/* la imagen del logo */
 
 #logo {
 	-webkit-box-flex:1;
@@ -195,11 +221,15 @@ button > img{
 	width:230%;
 }
 
+/* el div que contiene la barra de divisón entre el banner y el resto de la página */
+
 #divider1{
 	height: 25px;
 	border-top: 0.5px solid black;
 	border-bottom: 0.5px solid black;
 }
+
+/* la imagen dentro de la barra de divisón (los tres puntos) */
 
 #divider1img{
 	display: block;
@@ -211,6 +241,8 @@ button > img{
 }
 
 /* ELEMENTOS SECTION */
+
+/* el div que contiene la parte principal de la página */
 
 #contenido{
 	display:flex;
@@ -233,6 +265,8 @@ button > img{
 	background: white;
 }
 
+/* el div que contiene el texto con animación encima del formulario */
+
 #contenidotop{
 	display:flex;
 	display: flex;
@@ -253,12 +287,16 @@ button > img{
 	        animation-duration: 10s;
 }
 
+/* el texto con animación que está arriba del formulario */
+
 #contenidotop p{
 	font-family: 'Indie Flower';
 	font-weight: bold;
 	font-size:20px;	
 
 }
+
+/* el div que contiene el formulario */
 
 #formulariodiv{
 	display:flex;
@@ -275,6 +313,8 @@ button > img{
 	border-top: 1px solid black;
 }
 
+/* el formulario en si */
+
 fieldset{
 	display: flex;
 	display: -webkit-box;
@@ -287,9 +327,13 @@ fieldset{
 	border: 0px;
 }
 
+/* el input de tipo file */
+
 #file{
 	max-width:175px;
 }
+
+/* los labels del formulario */
 
 label{
 	font-family: 'Indie Flower';
@@ -322,6 +366,8 @@ label{
   }
 }
 
+/* el botón de submit */
+
 #submit {
 	margin-top: 10px;
 	-webkit-box-shadow: 3px 4px 0px 0px #899599;
@@ -343,6 +389,8 @@ label{
 	width: 100%;
 }
 
+/* cuando se mueve el cursor por encima del botó nde submit */
+
 
 #submit:hover{
 	-webkit-transform:scale(1.25);
@@ -351,6 +399,8 @@ label{
 }
 
 /* ELEMENTOS FOOTER */
+
+/* el div que contiene los elementos de la barra de footer */
 
 #footerdiv{
 	display:flex;
@@ -368,6 +418,8 @@ label{
 	        justify-content: space-between;
 }
 
+/* el texto que contiene la barra del footer */
+
 #footerdiv p{
 	-webkit-box-flex: 1;
 	        flex: 1;
@@ -376,6 +428,8 @@ label{
 	font-size: 15px;
 	margin-left:-16.5%;
 }
+
+/* el div que contiene los iconos de redes sociales que contiene la barra de footer */
 
 #socialmediaicons{
 	-webkit-box-flex:1;
@@ -392,6 +446,8 @@ label{
 	        flex-direction:row;
 }
 
+/* los iconos de redes sociales que contiene la barra de footer */
+
 #socialmediaicons img{
 	margin-top: 7px;
 	margin-bottom: 7px;
@@ -405,6 +461,8 @@ label{
   	transition: transform .2s, -webkit-transform .2s;
   	cursor: pointer;	
 }
+
+/* cuando se mueve el cursor por encima de los iconos de redes sociales */
 
 #socialmediaicons img:hover{
 	transform: rotateY(360deg);

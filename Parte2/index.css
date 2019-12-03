@@ -81,6 +81,8 @@ label{
 
 /* BOTONES DEL MENU DE NAVEGACION */
 
+/* el div que contiene los botones de la barra de navegación */
+
 #navbuttons{
 	margin-left: 10%;
 	-webkit-box-orient:horizontal;
@@ -88,6 +90,8 @@ label{
 	    -ms-flex-direction:row;
 	        flex-direction:row;
 }
+
+/* cada uno de los botones que están dentro de la barra de navegación */
 
 #navbuttons button{
 	border-radius: 50%;
@@ -98,6 +102,8 @@ label{
 	margin: 35px;
 	cursor: pointer;	
 }
+
+/* las imágenes que están dentro de los botones (de la barra de navegación) */
 
 button > img{
 	display: flex;
@@ -117,9 +123,13 @@ button > img{
 	width:100%;
 }
 
+/* cuando se pasa el cursor por encima de los botones de la barra de navegación */
+
 #navbuttons button:hover{
 	background-color: lightgray;
 }
+
+/* cuando se pulsa los botones de la barra de navegación */
 
 #navbuttons button:active{
   background-color: lightgray;
@@ -130,9 +140,13 @@ button > img{
           transform: translateY(2px);
 }
 
+/* cuando los botones de la barra de navegación están activos */
+
 #navbuttons button:focus{
 	outline: 0;
 }
+
+/* el div que contiene los botones de login y registro dentro de la barra de navegación */
 
 #logreg {
 	margin-right: -10%;
@@ -147,6 +161,8 @@ button > img{
 	padding-left: 10%;
 }
 
+/* los botoes de login y registro */
+
 #logreg button{
 	width: 6.5em;
 	background-color: white;
@@ -154,6 +170,8 @@ button > img{
 	height: 1.75em;
 	cursor: pointer;	
 }
+
+/* el botón de registro */
 
 #reg{
 	margin-left: 1em;
@@ -174,6 +192,8 @@ button > img{
 
 /* ELEMENTOS HEADER */
 
+/* el div que contiene el banner de la página y el select de los idiomas */
+
 #banner{
 	display: flex;
 	display: -webkit-box;
@@ -186,6 +206,8 @@ button > img{
 	    -ms-flex-align: center;
 	        align-items: center;
 }
+
+/* el link del banner */
 
 #bannerlink{
 	display: flex;
@@ -200,6 +222,8 @@ button > img{
 	margin-right: 20%;
 }
 
+/* el div que contiene el selec de los idiomas */
+
 #dividioma{
 	margin-left:20%;
 	-webkit-box-flex:1;
@@ -209,6 +233,8 @@ button > img{
 	-ms-flex-item-align: end;
 	    align-self: flex-end;
 }
+
+/* la imagen del logo */
 
 #logo {
 	-webkit-box-flex:1;
@@ -222,11 +248,15 @@ button > img{
 	width:230%;
 }
 
+/* el div que contiene la barra de divisón entre el banner y el resto de la página */
+
 #divider1{
 	height: 25px;
 	border-top: 0.5px solid black;
 	border-bottom: 0.5px solid black;
 }
+
+/* la imagen dentro de la barra de divisón (los tres puntos) */
 
 #divider1img{
 	display: block;
@@ -242,6 +272,8 @@ button > img{
 
 /* parte superior */
 
+/* el div que contiene la barra de búsqueda y el botón de búsqueda avanzada */
+
 #contenttop{
 	display: flex;
 	display: flex;
@@ -256,14 +288,20 @@ button > img{
 	        align-items: flex-start;
 }
 
+/* la barra de búsqueda simple */
+
 #searchbar{
 	border-radius: 1em;
 	height: 1.5em;
 }
 
+/* cuando la barra de búsqueda simple está seleccionada */
+
 #searchbar:focus{
 	outline:0;
 }
+
+/* el botón de búsqueda avanzada */
 
 #advsearch{
 	background-color: white;
@@ -274,6 +312,8 @@ button > img{
 }
 
 /* parte principal */
+
+/* el apartado donde está el contenido principal */
 
 #mainsection{
 	display: flex;
@@ -292,6 +332,8 @@ button > img{
 	height: 100%;		
 }
 
+/* cada una de las tres columnas de la parte de la sección principal */
+
 .contentdiv{
 	display: flex;
 	display: flex;
@@ -308,10 +350,14 @@ button > img{
 	width: 350px;
 }
 
+/* la etiqueta que nombra cada una de las tres columnas dentro de la sección principal */
+
 p.contentdivtag{
 	font-family: 'Indie Flower';
 	font-size: 1.25em;
 }
+
+/* el div en el que se incluye los archivos media de cada una de las tres columnas de la sección principal */
 
 .contentcontainer{
 	display: flex;
@@ -334,6 +380,8 @@ p.contentdivtag{
 	overflow-x:hidden;
 }
 
+/* los div en los que están incluidos cada elemento indiviudal (archivos media) */
+
 div.mediacontent{
 	display: flex;
 	display: flex;
@@ -351,6 +399,8 @@ div.mediacontent{
 	height: 30%;
 	width: 90%;
 }
+
+/* el contenedor de las imágenes/videos */
 
 div.mediaimg{
 	display:flex;
@@ -373,6 +423,8 @@ div.mediaimg{
 	margin-right: 1em;
 }
 
+/* la imagen en si */
+
 .mediaimg img:first-child{
 	max-height: 80%;
 	max-width: 80%;
@@ -389,11 +441,15 @@ div.mediaimg{
   	transition: transform .2s, -webkit-transform .2s;
 } 
 
+/* la transformacion 2d que se realiza cuando se mueve el cursor por encima de la imagen */
+
 .mediaimg img:first-child:hover{
 	transform: scale(1.5);
 	-webkit-transform: scale(1.5);
 	-ms-transform: scale(1.5);
 }
+
+/* el video en si */
 
 .mediaimg video:first-child{
 	max-height: 85%;
@@ -411,17 +467,23 @@ div.mediaimg{
   	transition: transform .2s, -webkit-transform .2s;
 }
 
+/* la transformacion 2d que se realiza cuando se mueve el cursor por encima del video */
+
 .mediaimg video:first-child:hover{
 	transform: scale(1.5);
 	-webkit-transform: scale(1.5);
 	-ms-transform: scale(1.5);
 }
 
+/* la imagen que representa la valoración de los archivos media */
+
 .mediaimg img:last-child{
 	object-fit: contain;
 	-o-object-fit: contain;
 	margin-top: 10px;
 }
+
+/* el div que contiene el texto de descripción de los archivos media */
 
 div.mediatext{
 	display:flex;
@@ -441,6 +503,8 @@ div.mediatext{
 	        justify-content: flex-start;
 }
 
+/* el título de cada archivo media */ 
+
 .mediatext p:first-child{
 	margin-top:-10px;
 	font-family: 'Indie Flower';
@@ -448,10 +512,14 @@ div.mediatext{
 	font-weight: bold;
 }
 
+/* la categoría a la que pertenece cada archivo media */
+
 .mediatext p:nth-child(2){
 	margin-top: 0px;
 	font-size: 10px;
 }
+
+/* la descripción de cada archivo media */
 
 .mediatext p:last-child{
 	margin-top: -10px;
@@ -459,11 +527,15 @@ div.mediatext{
 	color: gray;
 }
 
+/* el texto que acompaña a cada miniatura de archivo media (todo el texto) */
+
 .mediatext p{
 	margin-left: -20px;
 }
 
 /* ELEMENTOS ASIDE */
+
+/* el div que contiene la información de qué usuario está logueado y el icono de settings */
 
 #topright{
 	display:flex;
@@ -479,11 +551,15 @@ div.mediatext{
 	        flex-grow:0;
 }
 
+/* la imagen que representa el icono de settings */
+
 #topright img{
 	object-fit: scale-down;
 	-o-object-fit: scale-down;
 	margin-right: 10px;
 }
+
+/* el div que contiene la información de qué usuario está conectado */
 
 #loggedasdiv{
 	display:flex;
@@ -504,10 +580,14 @@ div.mediatext{
 	border-top: 0px;
 }
 
+/* el texto del div que contiene la información de qué usuario está conectado */
+
 #loggedasdiv:first-child{
 	font-size: 1em;
 	font-family: 'Indie Flower';
 }
+
+/* el contenedor que contiene la barra lateral (exterior) */
 
 #sidebardiv{
 	background-color: #f44336;
@@ -517,6 +597,8 @@ div.mediatext{
 	margin-top: 25%;
 	border-right: 0px;
 }
+
+/* la parte que contiene el label de la barra lateral */
 
 #sidebartag{
 	display: flex;
@@ -529,10 +611,14 @@ div.mediatext{
 	        justify-content: center;
 }
 
+/* el label de la barra lateral */
+
 #sidebartag label{
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
+
+/* el contenedor que contiene la barra lateral (interior) */
 
 #sidebar{
 	display:flex;
@@ -548,6 +634,8 @@ div.mediatext{
 	        align-items:center;
 }
 
+/* la barra lateral en si (select) */ 
+
 #categorias{
 	height: 100px;
 	width: 100px;
@@ -555,6 +643,8 @@ div.mediatext{
 	font-family: 'Indie Flower';	
 	font-size: 18px;
 }
+
+/* los anuncios que aparecen en la barra lateral */
 
 .ad{
 	display:flex;
@@ -576,11 +666,15 @@ div.mediatext{
 	background-color: lightgray;	
 }
 
+/* la imagen que representa el icono de settings */
+
 #settingsicon{
 	cursor:pointer;
 }
 
 /* ELEMENTOS FOOTER */
+
+/* el div que contiene el texto con animación que aparece entre la sección principal y la barra de footer */
 
 .textoanimacion{
 	display:flex;
@@ -594,6 +688,8 @@ div.mediatext{
 	margin-top: 5em;
 }
 
+/* el texto con animación que aparece entre la sección principal y la barra de footer */
+
 .textoanimacion p{
 	font-family: 'Indie Flower';	
 	font-weight: bold;
@@ -605,6 +701,8 @@ div.mediatext{
 	-webkit-animation-iteration-count: infinite;
 	        animation-iteration-count: infinite;	
 }
+
+/* cada una de las animaciones asociadas al texto con animación */
 
 #panimacion1{
 	animation-name: anim-1;
@@ -657,6 +755,8 @@ div.mediatext{
   100% { left: 110%; opacity: 0; }	
 }
 
+/* el div que contiene los elementos de la barra de footer */
+
 #footerdiv{
 	display:flex;
 	display: flex;
@@ -674,6 +774,8 @@ div.mediatext{
 	        justify-content: space-between;
 }
 
+/* el texto que contiene la barra del footer */
+
 #footerdiv p{
 	-webkit-box-flex: 1;
 	        flex: 1;
@@ -682,6 +784,8 @@ div.mediatext{
 	font-size: 15px;
 	margin-left:-16.5%;
 }
+
+/* el div que contiene los iconos de redes sociales que contiene la barra de footer */
 
 #socialmediaicons{
 	-webkit-box-flex:1;
@@ -698,6 +802,8 @@ div.mediatext{
 	        flex-direction:row;
 }
 
+/* los iconos de redes sociales que contiene la barra de footer */
+
 #socialmediaicons img{
 	margin-top: 7px;
 	margin-bottom: 7px;
@@ -711,6 +817,8 @@ div.mediatext{
   	transition: transform .2s, -webkit-transform .2s;
   	cursor:pointer;	
 }
+
+/* cuando se mueve el cursor por encima de los iconos de redes sociales */
 
 #socialmediaicons img:hover{
 	transform: rotateY(360deg);
